@@ -64,6 +64,21 @@ class ReportController extends Controller
         return view('report.index',compact('reports'));
     }
 
+    public function searchApi(Request $request){
+        $reports = Report::where([
+            ['report_verified','verified'],
+            ['nama','LIKE','%'.$request->search.'%']
+        ])->orWhere([
+            ['report_verified','verified'],
+            ['rekening','LIKE','%'.$request->search.'%']
+        ])->orWhere([
+            ['report_verified','verified'],
+            ['platform','LIKE','%'.$request->search.'%']
+        ])->get();
+
+        return view('report.partial',compact('reports'));
+    }
+
     public function verification($id){
         Report::where('id',$id)->update([
             'report_verified' => 'verified'
@@ -74,6 +89,13 @@ class ReportController extends Controller
     public function unverifiedReports(){
         $reports = Report::whereNull('report_verified')->get();
         return view('unverifiedreport.index',compact('reports'));
+    }
+
+    public function unverify($id){
+        Report::where('id',$id)->update([
+            'report_verified' => null
+        ]);
+        return redirect('/');
     }
 
 }

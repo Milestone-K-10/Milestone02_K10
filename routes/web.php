@@ -20,6 +20,8 @@ Route::get('/report/{id}','ReportController@show');
 Route::get('/search','ReportController@search');
 Route::get('/report/{id}/verification','ReportController@verification')->middleware('role');
 Route::get('/unverified-reports','ReportController@unverifiedReports')->middleware('role');
+Route::post('/verifyreport/{id}','ReportController@verification');
+Route::post('/unverify-report/{id}','ReportController@unverify');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

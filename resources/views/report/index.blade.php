@@ -11,12 +11,9 @@
                 </select>
             </th>
             <th>
-                <form class="from-inline" action="/search">
-                    <input type="text" width="50%" name="search">
-                    <button class="btn btn-sm btn-primary" type="submit">Search</button>
-                </form>
+                <input type="text" width="50%" name="search" id="myInput" placeholder="Search" onkeyup="handleChange()">
             </th>
-            <th>
+            <th colspan="2">
                 <button class="btn btn-primary btn-sm">
                     Advanced
                 </button>
@@ -29,10 +26,12 @@
             <th>Nama</th>
             <th>Nomor Rekening</th>
             <th>Platform</th>
+            @if (Auth::user()->role == "admin")
+                <th>Action</th>
+            @endif
         </tr>
     </thead>
-    <tbody>
-        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    <tbody id="result">
         @foreach ($reports as $report)
         <tr style="text-align: center">
             <td>
@@ -44,29 +43,31 @@
             <td>
                 <p> {{$report->platform}} </p>
             </td>
+            @if (Auth::user()->role == "admin")
+                <td>
+                    <form action="/unverify-report/{{$report->id}}" method="POST">
+                        @csrf
+                        <input type="submit" value="Unverify" class="btn btn-sm btn-danger">    
+                    </form>
+                </td>
+            @endif
+            
         </tr>
         @endforeach
-
     </tbody>
 </table>
 @endsection
 
 @section('script')
 <script>
-    function filterFunction() {
-        var input, filter, ul, li, a, i, p;
+function handleChange() {
         input = document.getElementById("myInput");
-        filter = input.value.toUpperCase();
-        div = document.getElementById("myDropdown");
-        p = div.getElementsByTagName("p");
-        for (i = 0; i < p.length; i++) {
-            txtValue = p[i].textContent || p[i].innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                p[i].style.display = "";
-            } else {
-                p[i].style.display = "none";
-            }
-        }
+        fetch(`/api/search?search=${input.value}`).then(data => {
+            return data.text()
+        }).then(data => {
+            document.getElementById("result").innerHTML = data;
+        })
     }
+
 </script>
 @endsection
