@@ -68,5 +68,9 @@ function handleChange() {
             document.getElementById("result").innerHTML = data;
         })
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 22be9151cf02288dab2efbc5dad07886a97a099e
 </script>
 @endsection

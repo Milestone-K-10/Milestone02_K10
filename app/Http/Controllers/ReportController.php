@@ -98,4 +98,8 @@ class ReportController extends Controller
         return redirect('/');
     }
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 22be9151cf02288dab2efbc5dad07886a97a099e
