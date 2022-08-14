@@ -1,0 +1,15 @@
+.milestone{
+    position: relative;
+    left: 30%;
+    border-style: double;
+    border-radius: 7%;
+    border-color: black;
+}
+
+.community {
+    position: relative;
+}
+
+.bukti {
+    text-align: center;
+}

@@ -12,6 +12,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <!-- Theme style -->
   <link rel="stylesheet" href="{{asset('/dist/css/adminlte.min.css')}}">
+  <link rel="stylesheet" href="css/community.css">
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
@@ -46,7 +47,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Blank Page</h1>
+            <h1>Community</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -64,7 +65,7 @@
       <!-- Default box -->
       <div class="card">
         <div class="card-header">
-          <h3 class="card-title">Report</h3>
+          <h3 class="card-title">Owner</h3>
 
           <div class="card-tools">
             <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
@@ -77,6 +78,23 @@
         </div>
         <div class="card-body">
           @yield('content')
+          <img class="milestone" src="pp/milestone.JPG" alt="" width="400">
+          <div class="community"><h1></h1>
+            <a color="#000000" href="https://www.instagram.com/muhdastinf_/">1. Muhammad Dastin Fauzi (16521083)</a><h1></h1>
+            <a href="http://www.instagram.com/thoriq__ramadhan">2. Muhammad Thoriq Ramadhan (16521096)</a><h1></h1>
+            <a href="https://www.instagram.com/asyifashfr/">3. Asyifa Nurul Shafira (16521132)</a><h1></h1>
+            <a href="https://www.instagram.com/karinarahadiani/">4. Karina Rahadiani (16521179)</a><h1></h1>
+            <a href="https://www.instagram.com/marvel_subekti/">5. Marvel Subekti (16521220)</a><h1></h1>
+            <a href="https://www.instagram.com/rayhanpot/">6. Rayhan Hanif Maulana Pradana (16521234)</a><h1></h1>
+            <a href="https://www.instagram.com/samuel._eric/">7. Samuel Eric Yonatan (16521256)</a><h1></h1>
+            <a href="https://www.instagram.com/fadhlannazhif/">8. Fadhlan Nazhif Azizy (16521311)</a><h1></h1>
+            <a href="https://www.instagram.com/nathaniaclista/">9. Nathania Calista Djunaedi (16521392)</a><h1></h1>
+            <a href="https://www.instagram.com/rei.aja_/">10. Rei Arriel Clyfton (16521407)</a><h1></h1>
+            <a>11. Maggie Zeta RS (16521475)</a><h1></h1>
+            <a href="https://www.instagram.com/ps_ldm/">12. Bagus Lathif Firmansyah (16521506)</a><h1></h1>
+            <a href="https://www.instagram.com/mrifkyf_778/">13. Muhammad Rifky Fachrizain (16521510)</a><h1></h1>
+            <a href="https://www.instagram.com/afnanramadhan/">14. Afnan Edsa Ramadhan (16521542)</a>
+          </div>
         </div>
         <!-- /.card-body -->
     
@@ -94,9 +112,6 @@
   <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
-
-<!-- yield script -->
-@yield('script')
 
 <!-- jQuery -->
 <script src="{{asset('plugins/jquery/jquery.min.js')}}"></script>

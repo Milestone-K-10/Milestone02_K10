@@ -12,6 +12,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <!-- Theme style -->
   <link rel="stylesheet" href="{{asset('/dist/css/adminlte.min.css')}}">
+  <link rel="stylesheet" href="css/community.css">
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
@@ -46,7 +47,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Blank Page</h1>
+            <h1>About</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -64,7 +65,7 @@
       <!-- Default box -->
       <div class="card">
         <div class="card-header">
-          <h3 class="card-title">Report</h3>
+          <h3 class="card-title">DigiPoF (<i>Digital Prevention of Fraud</i>)</h3>
 
           <div class="card-tools">
             <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
@@ -77,6 +78,8 @@
         </div>
         <div class="card-body">
           @yield('content')
+          <p>Teknologi pada zaman sekarang semakin maju dan berkembang. Tetapi, ada beberapa pihak yang menyalahgunakan teknologi sekarang untuk melakukan penipuan yang berbasis digital.</p>
+          <h4><b>DigiPoF atau <i>Digital Prevention of Fraud</i> adalah sebuah website database yang dibuat untuk membantu masyarakat dalam mencegah penipuan digital.</b></h4>
         </div>
         <!-- /.card-body -->
     
@@ -94,9 +97,6 @@
   <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
-
-<!-- yield script -->
-@yield('script')
 
 <!-- jQuery -->
 <script src="{{asset('plugins/jquery/jquery.min.js')}}"></script>
