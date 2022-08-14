@@ -7,6 +7,22 @@ use App\Report;
 
 class ReportController extends Controller
 {
+    //Fungsi Get Link
+    function getMyUrl()
+    {
+        $protocol = (!empty($_SERVER['HTTPS']) && (strtolower($_SERVER['HTTPS']) == 'on' || $_SERVER['HTTPS'] == '1')) ? 'https://' : 'http://';
+        $server = $_SERVER['SERVER_NAME'];
+        $port = $_SERVER['SERVER_PORT'] ? ':' . $_SERVER['SERVER_PORT'] : '';
+        return $protocol . $server . $port;
+    }
+
+    // Deklarasi Variabel Link
+    public function link()
+    {
+        $linkurl = $this->getMyUrl();
+        session()->put('linkurl', $linkurl);
+    }
+
 
     public function __construct(){
         $this->middleware('auth')->only('create');
