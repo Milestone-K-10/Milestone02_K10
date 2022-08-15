@@ -293,7 +293,7 @@ header{
   
   .seemore , .jumbotron-text h2 , .jumbotron-text p{
     flex-grow: 1;
-    margin:3px;
+    margin:4px;
   }
   .seemore a {
     text-align:center;
@@ -345,9 +345,13 @@ header{
     background-color:goldenrod;
     border-radius:10px;
   }*/
+  .right-jumbotron{
+    
+    clear:both;
+  }
   .jumbotron-image img{
-    height:50%;
-    width:50%;
+    height:39%;
+    width:39%;
   }
   .jumbotron-image{
     display:flex;
