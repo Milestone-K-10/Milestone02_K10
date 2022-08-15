@@ -5,7 +5,7 @@
   padding: 0;
   margin: 0;
 }
-
+/*edit keseluruhan page*/
 body {
   font-family: "Poppins", sans-serif;
   color: #fff;
@@ -31,6 +31,11 @@ body {
   margin-bottom: 60px;
 }
 
+header img{
+  height:50%;
+  width:50%;
+  object-fit: contain;
+}
 .nav-items {
   margin-bottom: 30px;
   display: flex;
@@ -43,12 +48,14 @@ body {
   text-decoration: none;
 }
 
-/*
+/* Ini untuk memberi warna pungu pada Navi Bar
 #selected {
   background-color: #6a5ecc;
   border-radius: 5px;
 }
 */
+
+/*Memberi warna ungu jika kursor diarahkan ke text*/
 .nav-items:hover {
   background-color: #6a5ecc;
   border-radius: 5px;
@@ -58,6 +65,11 @@ ion-icon {
   margin-right: 10px;
 }
 
+.logo-and-text{
+  display:flex;
+  justify-content:space-around;
+}
+/*CSS untuk Main Content*/
 header{
     display:flex;
     justify-content:space-around;
