@@ -1,112 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DigiPoF</title>
-
-  <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="{{asset('/plugins/fontawesome-free/css/all.min.css')}}">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="{{asset('/dist/css/adminlte.min.css')}}">
-</head>
-<body class="hold-transition sidebar-mini">
-<!-- Site wrapper -->
-<div class="wrapper">
-  <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-    <!-- Left navbar links -->
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="../../index3.html" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
-      </li>
-    </ul>
-
-    <!-- Right navbar links -->
-    
-  </nav>
-  <!-- /.navbar -->
-
-  <!-- Main Sidebar Container -->
-  @include('adminlte.partial.sidebar')
-
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1>Blank Page</h1>
-          </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Blank Page</li>
-            </ol>
-          </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{asset('css/milestone_edit.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/create_report.css')}}">
+    <title>DigiPoF</title>
+  </head>
+  <body>
+    @include('adminlte.partial.sidebar')
+    <div class="content">
+      <header class="right">
+        <div class="left-content">
+            <div>
+                <h3>Hello there,</h3>
+                <h2>Any Suspecious move?</h2>
+            </div>
         </div>
-      </div><!-- /.container-fluid -->
-    </section>
-
-    <!-- Main content -->
-    <section class="content">
-
-      <!-- Default box -->
-      <div class="card">
-        <div class="card-header">
-          <h3 class="card-title">Report</h3>
-
-          <div class="card-tools">
-            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-              <i class="fas fa-minus"></i>
-            </button>
-            <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
-              <i class="fas fa-times"></i>
-            </button>
-          </div>
+        <!-- Ga ngerti cara bikin search box dan notifikasi -->
+        <div class="right-content">
+            <div class="search-box">
+                <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+                    <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-3" viewBox="0 0 40 41">
+                    <path d="M26.51 28.573c-2.803 2.34-6.412 3.748-10.35 3.748C7.236 32.32 0 25.087 0 16.16 0 7.236 7.235 0 16.16 0c8.926 0 16.16 7.235 16.16 16.16 0 4.213-1.61 8.048-4.25 10.925L40 39.015l-1.524 1.524L26.51 28.572zm-10.35 2.132c8.033 0 14.545-6.512 14.545-14.544S24.193 1.617 16.16 1.617 1.617 8.128 1.617 16.16c0 8.033 6.512 14.545 14.545 14.545z"
+                    fill-rule="evenodd" />
+                    </symbol>
+                    <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-5" viewBox="0 0 20 20">
+                    <path d="M10 20c5.523 0 10-4.477 10-10S15.523 0 10 0 0 4.477 0 10s4.477 10 10 10zm1.35-10.123l3.567 3.568-1.225 1.226-3.57-3.568-3.567 3.57-1.226-1.227 3.568-3.568-3.57-3.57 1.227-1.224 3.568 3.568 3.57-3.567 1.224 1.225-3.568 3.57zM10 18.272c4.568 0 8.272-3.704 8.272-8.272S14.568 1.728 10 1.728 1.728 5.432 1.728 10 5.432 18.272 10 18.272z"
+                    fill-rule="evenodd" />
+                    </symbol>
+                </svg>
+                
+                <form novalidate="novalidate" onsubmit="return false;" class="searchbox sbx-custom">
+                    <div role="search" class="sbx-custom__wrapper">
+                    <input type="search" name="search" placeholder="Type Keywords" autocomplete="off" required="required" class="sbx-custom__input">
+                    <button type="submit" title="Submit your search query." class="sbx-custom__submit">
+                        <svg role="img" aria-label="Search">
+                        <use xlink:href="#sbx-icon-search-3"></use>
+                        </svg>
+                    </button>
+                    <button type="reset" title="Clear the search query." class="sbx-custom__reset">
+                        <svg role="img" aria-label="Reset">
+                        <use xlink:href="#sbx-icon-clear-5"></use>
+                        </svg>
+                    </button>
+                    </div>
+                </form>
+                <script type="text/javascript">
+                    document.querySelector('.searchbox [type="reset"]').addEventListener('click', function() {  this.parentNode.querySelector('input').focus();});
+                </script>
+            </div>
+            
+            <div class="header-icon">
+                <ion-icon name="notifications-outline" class="notification"></ion-icon>
+            </div>
         </div>
-        <div class="card-body">
-          @yield('content')
+      </header>
+      
+      <main>
+        <div class="jumbotron">
+            <div class="left-jumbotron">
+                <div class="jumbotron-text">
+                    <h2>Report Person</h2>
+                    <p>Upload your proof here</p>
+                        <div class="seemore">
+                          <a href="/report" class="myButton">See More 
+                            <ion-icon name="arrow-forward-outline" class="seemore-icon"></ion-icon> </a>
+                          
+                        </div>
+                </div>
+            </div>
+            <div class="right-jumbotron">
+                <div class="jumbotron-image">
+                  <img src="{{asset('images/gambar orang.png')}}">
+                </div>
+            </div>
         </div>
-        <!-- /.card-body -->
-    
-      </div>
-      <!-- /.card -->
-
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-
-
-  <!-- Control Sidebar -->
-
-  <!-- /.control-sidebar -->
-</div>
-<!-- ./wrapper -->
-
-<!-- yield script -->
-@yield('script')
-
-<!-- jQuery -->
-<script src="{{asset('plugins/jquery/jquery.min.js')}}"></script>
-<!-- Bootstrap 4 -->
-{{-- <script src="{{../../plugins/bootstrap/js/bootstrap.bundle.min.js}}"></script> --}}
-<!-- AdminLTE App -->
-<script src="{{asset('dist/js/adminlte.min.js')}}"></script>
-<!-- AdminLTE for demo purposes -->
-{{-- <script src="../../dist/js/demo.js"></script> --}}
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
-</body>
+        
+        <div class="main-content">
+            @yield('content')
+        </div>
+        <!-- button see more -->
+      </main>
+      <!-- Sisanya ga ngerti -->
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    @yield('script')
+  </body>
 </html>

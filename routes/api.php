@@ -16,9 +16,4 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-
-<<<<<<< HEAD
 Route::get('/search','ReportController@searchApi');
-=======
-Route::get('/search','ReportController@searchApi');
->>>>>>> 22be9151cf02288dab2efbc5dad07886a97a099e

@@ -18,16 +18,17 @@ Route::post('/report', 'ReportController@store');
 Route::get('/','ReportController@index');
 Route::get('/report/{id}','ReportController@show');
 Route::get('/search','ReportController@search');
-Route::get('/report/{id}/verification','ReportController@verification')->middleware('role');
-Route::get('/unverified-reports','ReportController@unverifiedReports')->middleware('role');
+Route::get('/report/{id}/verification','AdminController@verification')->middleware('role');
+Route::get('/unverified-reports','AdminController@unverifiedReports')->middleware('role');
+Route::get('/community', function() {
+    return view('community/community');
+});
+Route::get('/about', function() {
+    return view('/about');
+});
 
-<<<<<<< HEAD
-Route::get('/community', function() {return view('community/community');});
-Route::get('/about', function() {return view('/about');});
-=======
->>>>>>> 22be9151cf02288dab2efbc5dad07886a97a099e
-Route::post('/verifyreport/{id}','ReportController@verification');
-Route::post('/unverify-report/{id}','ReportController@unverify');
+Route::post('/verifyreport/{id}','AdminController@verification')->middleware('role');
+Route::post('/unverify-report/{id}','AdminController@unverify')->middleware('role');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

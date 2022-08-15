@@ -1,7 +1,33 @@
 @extends('adminlte.master')
 
 @section('content')
-<form action="/report" method="POST" enctype="multipart/form-data">
+
+      <h1 style="text-align: center;padding-top:0.5em">Report Form</h1>
+      <!--Data yang dimasukan kedalam form webiste akan dimasukan ke file yag di link ke action-->
+      <form action="/report" method="POST" enctype="multipart/form-data">
+        @csrf
+        <div class="txt_field">
+          <input type="text" required name="nama">
+          <span></span>
+          <label>Nama</label>
+        </div>
+        <div class="txt_field">
+          <input type="text" required name="rekening">
+          <span></span>
+          <label>Nomor Rekening</label>
+        </div>
+        <div class="txt_field">
+          <input type="text" required name="platform">
+          <span></span>
+          <label>Platform</label>
+        </div>
+        <div class="container"></div>            
+        <input type="submit" value="Submit">
+      </form>
+
+@endsection
+
+{{-- <form action="/report" method="POST" enctype="multipart/form-data">
     @csrf
         <div class="mb-3">
             <label class="form-label">Nama</label>
@@ -32,5 +58,4 @@
             @enderror
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-@endsection
+    </form> --}}

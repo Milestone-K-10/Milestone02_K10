@@ -95,27 +95,5 @@ class ReportController extends Controller
         return view('report.partial',compact('reports'));
     }
 
-    public function verification($id){
-        Report::where('id',$id)->update([
-            'report_verified' => 'verified'
-        ]);
-        return redirect('/');
-    }
-
-    public function unverifiedReports(){
-        $reports = Report::whereNull('report_verified')->get();
-        return view('unverifiedreport.index',compact('reports'));
-    }
-
-    public function unverify($id){
-        Report::where('id',$id)->update([
-            'report_verified' => null
-        ]);
-        return redirect('/');
-    }
-
-<<<<<<< HEAD
+    
 }
-=======
-}
->>>>>>> 22be9151cf02288dab2efbc5dad07886a97a099e
