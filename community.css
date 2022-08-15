@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/*edit keseluruhan page*/
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  border-radius: 50px;
+  padding: 20px 15px;
+  background-color: #1f2127;
+  height: 590px; /* masih blm tentu */
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  column-gap: 2px;
+}
+
+/* CSS UNTUK SIDEBAR */
+
+.sidebar {
+  border-right: #343740 2px solid;
+  height: 100%;
+  padding-right: 20px;
+  /* width: 200px; */
+}
+
+.sidebar header {
+  margin-bottom: 60px;
+}
+
+.logo-and-text img {
+  height: 50px;
+  width: 50px; /* gw ganti jadi px bukan % abisnya kalo persen gambarnya jadi gede di gw, kalo mungkin salah, ganti lagi aja */
+  object-fit: contain;
+}
+.nav-items {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav-items a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Ini untuk memberi warna pungu pada Navi Bar
+#selected {
+  background-color: #6a5ecc;
+  border-radius: 5px;
+}
+*/
+
+/*Memberi warna ungu jika kursor diarahkan ke text*/
+.nav-items:hover {
+  background-color: #6a5ecc;
+  border-radius: 5px;
+}
+
+ion-icon {
+  margin-right: 10px;
+}
+
+.logo-and-text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* CSS UNTUK CONTENT */
+
+.content header h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section img {
+  margin: 20px 40px;
+  width: 600px;
+  border-radius: 20px;
+  border: #6a5ecc 4px solid;
+}
+
+li {
+  list-style: none;
+  margin: 5px;
+}
