@@ -305,6 +305,7 @@ form .txt_field{
   border: none;
   background: none;
   outline: none;
+  color:white;
 }
 .txt_field label{
   position: absolute;
@@ -323,25 +324,29 @@ form .txt_field{
   left: 0;
   width: 0%;
   height: 2px;
-  background: #6a5ecc;
+  background: #adadad;
   transition: .5s;
+  
 }
 .txt_field input:focus ~ label,
 .txt_field input:valid ~ label{
   top: -5px;
-  color: #6a5ecc;
+  color: #adadad;
 }
 .txt_field input:focus ~ span::before,
 .txt_field input:valid ~ span::before{
   width: 100%;
+  
 }
 .pass{
   margin: -5px 0 20px 5px;
   color: #a6a6a6;
   cursor: pointer;
+  
 }
 .pass:hover{
   text-decoration: underline;
+  
 }
 input[type="submit"]{
   width: 100%;
@@ -360,11 +365,22 @@ input[type="submit"]:hover{
   border-color: #6a5ecc;
   transition: .5s;
 }
-
+input[type="file"]{
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  color: #e9f4fb;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  margin:20px 0px;
+}
 .drag{
   display:flex;
   justify-content: center;
   margin : 10px 0px;
+  border:2px dashed #fff;
 }
 .drag-area{
   border: 2px dashed #fff;
@@ -383,7 +399,7 @@ input[type="submit"]:hover{
   font-size: 100px;
   color: #fff;
 }
-.drag-area header{
+.drag-area .header{
   font-size: 30px;
   font-weight: 500;
   color: #fff;
@@ -394,13 +410,13 @@ input[type="submit"]:hover{
   color: #fff;
   margin: 10px 0 15px 0;
 }
-.drag-area button{
+.drag-area {
   padding: 10px 25px;
   font-size: 20px;
   font-weight: 500;
   border: none;
   outline: none;
-  background: #fff;
+  background: #343740;
   color: #5256ad;
   border-radius: 5px;
   cursor: pointer;
