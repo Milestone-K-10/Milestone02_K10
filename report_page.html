@@ -50,7 +50,7 @@
                 <h2>Any Suspecious move?</h2>
             </div>
         </div>
-        <!-- Ga ngerti cara bikin search box dan notifikasi -->
+        
         <div class="right-content">
             <div class="search-box">
                 <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
@@ -89,6 +89,33 @@
             </div>
         </div>
       </header>
+
+      <!--Membuat form report-->
+      <main>
+        <div class="center">
+          <h1>Report Form</h1>
+          <!--Data yang dimasukan kedalam form webiste akan dimasukan ke file yag di link ke action-->
+          <form method="post" action="#">
+            <div class="txt_field">
+              <input type="text" required>
+              <span></span>
+              <label>Nama</label>
+            </div>
+            <div class="txt_field">
+              <input type="text" required>
+              <span></span>
+              <label>Nomor Rekening</label>
+            </div>
+            <div class="txt_field">
+              <input type="text" required>
+              <span></span>
+              <label>Platform</label>
+            </div>
+            <div class="container"></div>            
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </main>
     <script
     type="module"
     src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
