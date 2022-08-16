@@ -6,7 +6,7 @@ Nama-NIM Anggota :
 
     1.  Muhammad Dastin Fauzi (16521083), [Tugas - Nanti diisi aja]
 
-    2.  Muhammad Thoriq Ramadhan (16521096), [Back-end]
+    2.  Muhammad Thoriq Ramadhan (16521096), [Back-end : membuat fitur dan route, menyesuaikan css]
 
     3.  Asyifa Nurul Shafira (16521132), [Step by step how to use source-code]
 
