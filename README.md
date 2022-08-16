@@ -20,7 +20,7 @@ Nama-NIM Anggota :
 
     8.  Fadhlan Nazhif Azizy (16521311)
 
-    9.  Nathania Calista Djunaedi (16521392)
+    9.  Nathania Calista Djunaedi (16521392), [Back-end : buat route untuk fitur create report dan show report]
 
     10. Rei Arriel Clyfton (16521407), [Front-end]
 
