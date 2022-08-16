@@ -16,7 +16,7 @@ Nama-NIM Anggota :
 
     6.  Rayhan Hanif Maulana Pradana (16521234)
 
-    7.  Samuel Eric Yonatan (16521256), [Front-end]
+    7.  Samuel Eric Yonatan (16521256), [Front-end : membuat css dan html]
 
     8.  Fadhlan Nazhif Azizy (16521311)
 
