@@ -12,7 +12,7 @@ Nama-NIM Anggota :
 
     4.  Karina Rahadiani (16521179), [Design UI/UX dan membuat brand (logo)]
 
-    5.  Marvel Subekti (16521220), [Front-end : membuat css dan html]
+    5.  Marvel Subekti (16521220), [Front-end : home landing page and report landing page]
 
     6.  Rayhan Hanif Maulana Pradana (16521234)
 
