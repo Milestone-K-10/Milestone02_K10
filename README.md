@@ -29,6 +29,8 @@ Nama-NIM Anggota :
     12. Bagus Lathif Firmansyah (16521506)
     
     13. Muhammad Rifky Fachrizain (16521510)
+    
+    14. Afnan Edsa Ramadhan (16521542) [Front-end : mengedit side bar]
 
 Step by step how to use source-code:
 1) Install PHP v.7.4 dan Database (MySQL) (disarankan install package saja seperti XAMPP v.7.4, link : https://www.apachefriends.org/download.html ) karena source coude menggunakan laravel 8.x
