@@ -39,6 +39,7 @@ Step by step how to use source-code:
 4) Jalanan XAMPP dan masuk ke phpmyadmin, ketik perintah "php artisan migrate" untuk membuat database
 5) Ketik perintah "composer upgrade" untuk mengunduh vendor laravel
 6) Pastikan isi file (.env) sudah benar :
+
 APP_NAME=Laravel
 APP_ENV=local
 APP_KEY=base64:aRajHQtdBfTMl9xmCq5E7lfq47PHGKjPJnT2FlMw4mI=
