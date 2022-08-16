@@ -6,7 +6,7 @@ Nama-NIM Anggota :
 
     1.  Muhammad Dastin Fauzi (16521083), [Tugas - Nanti diisi aja]
 
-    2.  Muhammad Thoriq Ramadhan (16521096)
+    2.  Muhammad Thoriq Ramadhan (16521096), [Back-end]
 
     3.  Asyifa Nurul Shafira (16521132)
 
