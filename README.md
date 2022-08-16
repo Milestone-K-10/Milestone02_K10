@@ -22,7 +22,7 @@ Nama-NIM Anggota :
 
     9.  Nathania Calista Djunaedi (16521392)
 
-    10. Rei Arriel Clyfton (16521407)
+    10. Rei Arriel Clyfton (16521407), [Front-end]
 
     11. Maggie Zeta RS (16521475)
 
