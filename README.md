@@ -4,7 +4,7 @@ Nomor-Nama Kelompok : Kelompok 10 - Biner
 
 Nama-NIM Anggota :
 
-    1.  Muhammad Dastin Fauzi (16521083), [Tugas - Nanti diisi aja]
+    1.  Muhammad Dastin Fauzi (16521083), [Design UI/UX]
 
     2.  Muhammad Thoriq Ramadhan (16521096), [Back-end : membuat fitur dan route, menyesuaikan css]
 
