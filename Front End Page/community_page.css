@@ -32,10 +32,17 @@ body {
 }
 
 .logo-and-text img {
-  height: 50px;
-  width: 50px; /* gw ganti jadi px bukan % abisnya kalo persen gambarnya jadi gede di gw, kalo mungkin salah, ganti lagi aja */
-  object-fit: contain;
+  height: 43px;
+  width: 47px; /* gw ganti jadi px bukan % abisnya kalo persen gambarnya jadi gede di gw, kalo mungkin salah, ganti lagi aja */
+  /* object-fit: contain; */
+  margin-left: 5px;
+  margin-bottom: 3px;
 }
+
+#home {
+  margin-top: 100px;
+}
+
 .nav-items {
   margin-bottom: 30px;
   display: flex;
@@ -87,7 +94,7 @@ section {
 
 section img {
   margin: 20px 40px;
-  width: 600px;
+  width: 580px;
   border-radius: 20px;
   border: #6a5ecc 4px solid;
 }
