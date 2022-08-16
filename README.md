@@ -22,7 +22,7 @@ Nama-NIM Anggota :
 
     9.  Nathania Calista Djunaedi (16521392), [Back-end : buat route untuk fitur create report dan show report]
 
-    10. Rei Arriel Clyfton (16521407), [Front-end]
+    10. Rei Arriel Clyfton (16521407), [Back-end : fitur search sama dynamic api/link , Design UI]
 
     11. Maggie Zeta RS (16521475)
 
