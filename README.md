@@ -8,7 +8,7 @@ Nama-NIM Anggota :
 
     2.  Muhammad Thoriq Ramadhan (16521096), [Back-end]
 
-    3.  Asyifa Nurul Shafira (16521132)
+    3.  Asyifa Nurul Shafira (16521132), [Step by step how to use source-code]
 
     4.  Karina Rahadiani (16521179)
 
