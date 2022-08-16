@@ -12,7 +12,7 @@ Nama-NIM Anggota :
 
     4.  Karina Rahadiani (16521179)
 
-    5.  Marvel Subekti (16521220)
+    5.  Marvel Subekti (16521220), [Front-end]
 
     6.  Rayhan Hanif Maulana Pradana (16521234)
 
