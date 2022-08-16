@@ -91,5 +91,9 @@ class ReportController extends Controller
         return view('report.partial',compact('reports'));
     }
 
+    public function show($id){
+        $report = Report::where('id',$id)->first();
+        return view('unverifiedreport.show',compact('report'));
+    }
 
 }

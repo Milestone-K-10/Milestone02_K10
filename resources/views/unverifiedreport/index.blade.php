@@ -17,7 +17,6 @@
               />
             </symbol>
           </svg>
-
           <form novalidate="novalidate" onsubmit="return false;" class="searchbox sbx-custom2">
             <div role="search" class="sbx-custom__wrapper2">
               <input type="search" name="search/unverify" placeholder="Search your website" autocomplete="off" required="required" class="sbx-custom__input2" id="myInput" onkeyup="handleChange()">
@@ -64,7 +63,7 @@
                     @auth
                     <td style="display: flex; margin-left:5rem">
                         @if (Auth::user()->role == "admin")
-                            <a href="/unverified-report/{{$report->id}}" class="btn-sm btn-primary">Show</a>
+                            <a href="/report/{{$report->id}}" class="btn-sm btn-primary">Show</a>
                             <form method="POST" action="/verifyreport/{{$report->id}}">
                                 @csrf
                                 <button type="submit" class="btn-sm btn-warning" style="margin-left: 1em">Verify</button>
@@ -75,6 +74,7 @@
                 </tr>
 
             @endforeach
+
         </tbody><!--Untuk Menyimpan inputan data-->
     </table>
 </div>

@@ -66,7 +66,7 @@
                     <h2>Report Person</h2>
                     <p>Upload your proof here</p>
                         <div class="seemore">
-                          <a href="/report" class="myButton">See More
+                          <a href="/report/create" class="myButton">See More
                             <ion-icon name="arrow-forward-outline" class="seemore-icon"></ion-icon> </a>
 
                         </div>

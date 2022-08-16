@@ -13,8 +13,9 @@
 use Illuminate\Support\Facades\Route;
 
 
+
 Route::get('/report/create','ReportController@create');
-Route::post('/report', 'ReportController@store');
+Route::get('/report', 'ReportController@store');
 Route::get('/','ReportController@index');
 Route::get('/report/{id}','ReportController@show');
 Route::get('/search','ReportController@search');

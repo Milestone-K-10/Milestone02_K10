@@ -2,7 +2,6 @@
 
 @section('css')
     <link rel="stylesheet" href="{{asset('css/create_report.css')}}">
-    <link rel="stylesheet" href="{{asset('css/community.css')}}">
 @endsection
 
 @section('content')

@@ -142,17 +142,18 @@ section {
 
 .dropside-content {
     display: none;
-    position: relative;
-    background-color: #6a5ecc;
+    position: absolute;
+    background-color: white;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 10px;
-    opacity: 0.5;
+    opacity: 0.75;
+    left: 2.7%;
 }
 
 .dropside-content a {
     float: left;
-    color: white;
+    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: row;
@@ -160,11 +161,19 @@ section {
 }
 
 .dropside-content a:hover {
-    background-color: #ddd;
+    background-color: white;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 .dropside:hover .dropside-content {
-    display: block;
+    display: flex;
+}
+
+.bukti {
+    position:relative;
+    border: #1f2127 2px solid;
+    margin: 10px;
+    min-width: 40%;
+    min-height: 40%;
 }
