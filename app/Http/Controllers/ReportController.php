@@ -32,13 +32,13 @@ class ReportController extends Controller
         $reports = Report::where('report_verified','verified') ->get();
         return view('report.index', compact('reports'));
     }
-    
+
     public function create(){
         return view('report.create');
     }
 
     public function store(Request $request){
-        
+
         $request->validate([
             'nama' => 'required',
             'rekening' => 'required|unique:reports',
@@ -58,15 +58,11 @@ class ReportController extends Controller
         ]);
 
         return redirect('/');
-    }   
-
-    public function show($id){
-        $report = Report::where('id',$id)->first();
-        return view('unverifiedreport.show',compact('report'));
     }
 
+
     public function search(Request $request){
-        
+
         $reports = Report::where([
             ['report_verified','verified'],
             ['nama','LIKE','%'.$request->search.'%']
@@ -95,5 +91,5 @@ class ReportController extends Controller
         return view('report.partial',compact('reports'));
     }
 
-    
+
 }

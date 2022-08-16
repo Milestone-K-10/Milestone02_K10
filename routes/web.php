@@ -26,7 +26,9 @@ Route::get('/community', function() {
 Route::get('/about', function() {
     return view('/about');
 });
-
+Route::get('/settings', function() {
+    return view('/account');
+});
 Route::post('/verifyreport/{id}','AdminController@verification')->middleware('role');
 Route::post('/unverify-report/{id}','AdminController@unverify')->middleware('role');
 Auth::routes();

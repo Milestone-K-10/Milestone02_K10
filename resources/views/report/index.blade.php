@@ -17,7 +17,7 @@
               />
             </symbol>
           </svg>
-          
+
           <form novalidate="novalidate" onsubmit="return false;" class="searchbox sbx-custom2">
             <div role="search" class="sbx-custom__wrapper2">
               <input type="search" name="search" placeholder="Search your website" autocomplete="off" required="required" class="sbx-custom__input2" id="myInput" onkeyup="handleChange()">
@@ -48,6 +48,11 @@
                 <th>Nama</th>
                 <th>Nomor Rekening</th>
                 <th>Platform</th>
+                @auth
+                  @if (Auth::user()->role == "admin")
+                      <th>Action</th>
+                  @endif
+                @endauth
             </tr>
         </thead>
         <tbody id="historyList">
@@ -56,9 +61,19 @@
                     <td> {{$report->nama}} </td>
                     <td> {{$report->rekening}} </td>
                     <td> {{$report->platform}} </td>
+                    @auth
+                      @if (Auth::user()->role == "admin")
+                          <td>
+                            <form action="unverify-report/{{$report->id}}" method="POST">
+                              @csrf
+                              <button type="submit" class="btn-sm btn-danger">Unverify</button>
+                            </form>
+                          </td>
+                      @endif
+                    @endauth
                 </tr>
-                
-            @endforeach  
+
+            @endforeach
         </tbody><!--Untuk Menyimpan inputan data-->
     </table>
 </div>

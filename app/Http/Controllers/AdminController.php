@@ -25,4 +25,26 @@ class AdminController extends Controller
         ]);
         return redirect('/');
     }
+
+    public function show($id){
+        $report = Report::where('id',$id)->first();
+        return view('unverifiedreport.show',compact('report'));
+    }
+
+    public function searchApi(Request $request){
+        $reports = Report::where([
+            ['report_verified',null],
+            ['nama','LIKE','%'.$request->search.'%']
+        ])->orWhere([
+            ['report_verified',null],
+            ['rekening','LIKE','%'.$request->search.'%']
+        ])->orWhere([
+            ['report_verified',null],
+            ['platform','LIKE','%'.$request->search.'%']
+        ])->get();
+
+        return view('report.partial',compact('reports'));
+    }
+
+
 }

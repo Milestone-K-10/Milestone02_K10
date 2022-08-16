@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    @yield('css')
     <link rel="stylesheet" href="{{asset('css/milestone_edit.css')}}" />
-    <link rel="stylesheet" href="{{asset('css/create_report.css')}}">
+    <link rel="stylesheet" href="{{asset('css/community.css')}}">
     <title>DigiPoF</title>
   </head>
   <body>
@@ -31,7 +32,7 @@
                     fill-rule="evenodd" />
                     </symbol>
                 </svg>
-                
+
                 <form novalidate="novalidate" onsubmit="return false;" class="searchbox sbx-custom">
                     <div role="search" class="sbx-custom__wrapper">
                     <input type="search" name="search" placeholder="Type Keywords" autocomplete="off" required="required" class="sbx-custom__input">
@@ -51,13 +52,13 @@
                     document.querySelector('.searchbox [type="reset"]').addEventListener('click', function() {  this.parentNode.querySelector('input').focus();});
                 </script>
             </div>
-            
+
             <div class="header-icon">
                 <ion-icon name="notifications-outline" class="notification"></ion-icon>
             </div>
         </div>
       </header>
-      
+
       <main>
         <div class="jumbotron">
             <div class="left-jumbotron">
@@ -65,19 +66,19 @@
                     <h2>Report Person</h2>
                     <p>Upload your proof here</p>
                         <div class="seemore">
-                          <a href="/report" class="myButton">See More 
+                          <a href="/report" class="myButton">See More
                             <ion-icon name="arrow-forward-outline" class="seemore-icon"></ion-icon> </a>
-                          
+
                         </div>
                 </div>
             </div>
             <div class="right-jumbotron">
                 <div class="jumbotron-image">
-                  <img src="{{asset('images/gambar orang.png')}}">
+                  <img src="{{asset('images/gambar orang.png')}}" class="gambar_orang">
                 </div>
             </div>
         </div>
-        
+
         <div class="main-content">
             @yield('content')
         </div>
