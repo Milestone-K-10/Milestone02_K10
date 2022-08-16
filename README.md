@@ -10,7 +10,7 @@ Nama-NIM Anggota :
 
     3.  Asyifa Nurul Shafira (16521132), [Step by step how to use source-code]
 
-    4.  Karina Rahadiani (16521179)
+    4.  Karina Rahadiani (16521179), [Design UI/UX dan membuat brand (logo)]
 
     5.  Marvel Subekti (16521220), [Front-end : membuat css dan html]
 
@@ -22,7 +22,7 @@ Nama-NIM Anggota :
 
     9.  Nathania Calista Djunaedi (16521392), [Back-end : buat route untuk fitur create report dan show report]
 
-    10. Rei Arriel Clyfton (16521407), [Back-end : fitur search sama dynamic api/link , Design UI]
+    10. Rei Arriel Clyfton (16521407), [Back-end : fitur search sama dynamic api/link , Design UI/UX]
 
     11. Maggie Zeta RS (16521475)
 
